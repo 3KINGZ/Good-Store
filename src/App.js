@@ -1,22 +1,21 @@
 import React from "react";
-import "./App.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Promo from "./components/Promo/Promo";
-import Banner from "./components/Banner/Banner";
-import SectionContainer from "./components/SectionContainer/SectionContainer";
-import NewsLetter from "./components/NewsLetter/NewsLetter";
-import Footer from "./components/Footer/Footer";
+import HomePage from "./routes/HomePage/HomePage";
+import MenClothes from "./routes/MenClothes/MenClothes";
+import "./App.scss";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <Promo />
-      <Banner />
-      <SectionContainer />
-      <NewsLetter />
-      <Footer />
-    </div>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/men-clothes" component={MenClothes} />
+      </Switch>
+    </Router>
   );
 }
 
