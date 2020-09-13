@@ -1,0 +1,30 @@
+@import "../../assets/styles/config";
+
+.banner {
+  display: flex;
+  background-color: $accent;
+  width: $width;
+  margin: 20px auto;
+  justify-content: space-evenly;
+  height: 280px;
+}
+
+.img-container {
+  margin-right: 5%;
+}
+
+.season {
+  font-size: 5em;
+}
+
+.discount {
+  font-size: 4em;
+  font-weight: lighter;
+  font-family: abel;
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    display: none;
+  }
+}

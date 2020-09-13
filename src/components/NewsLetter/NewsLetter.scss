@@ -1,0 +1,15 @@
+@import "../../assets/styles/config";
+
+.newsletter {
+  width: $width;
+  margin: 25px auto;
+  padding: 3%;
+  background-color: #d3d4d4;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 700px) {
+  .newsletter {
+    width: 100%;
+  }
+}

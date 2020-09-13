@@ -1,0 +1,26 @@
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 300px;
+}
+
+.content {
+  width: 80%;
+  padding-top: 80%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  div {
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+    span {
+      display: inline-block;
+      padding-top: 5px;
+    }
+  }
+}

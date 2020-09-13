@@ -1,0 +1,19 @@
+@import "../../assets/styles/config";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: $width;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+.im {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    width: 80%;
+  }
+}

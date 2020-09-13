@@ -1,0 +1,21 @@
+@import "../../assets/styles/config";
+
+.section-container {
+  width: $width;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 30px 20px;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+  .section-container {
+    width: 100%;
+    display: block;
+    div {
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+}
