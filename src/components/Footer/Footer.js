@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="main-footer">
-        <div>
+        <div className="footer-intro">
           <Title />
           <p>
             In minim proident Lorem duis sunt sint velit nostrud fugiat.

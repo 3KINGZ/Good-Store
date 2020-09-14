@@ -1,0 +1,31 @@
+@import "../../assets/styles/config";
+
+.product-container {
+  width: $width;
+  margin: 0px auto 25px auto;
+  h3 {
+    margin: 15px 0;
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+  .main-product-container {
+    display: grid;
+    margin: auto;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .product-container {
+    width: 100%;
+    padding: 0 10px;
+    .main-product-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+}

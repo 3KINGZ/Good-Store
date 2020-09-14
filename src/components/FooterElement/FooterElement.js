@@ -6,8 +6,8 @@ function FooterElement({ title, elements }) {
     <div className="footer-element">
       <h3>{title}</h3>
       <ul>
-        {elements.map((element) => (
-          <li>{element}</li>
+        {elements.map((element, index) => (
+          <li key={index}>{element}</li>
         ))}
       </ul>
     </div>

@@ -2,7 +2,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+  transition: filter 1s;
   width: 300px;
+  cursor: pointer;
 }
 
 .content {
@@ -23,4 +25,8 @@
       padding-top: 5px;
     }
   }
+}
+
+.section:hover {
+  filter: grayscale(100%);
 }

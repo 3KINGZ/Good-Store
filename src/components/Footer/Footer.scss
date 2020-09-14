@@ -20,8 +20,14 @@
   .main-footer {
     display: block;
     width: 100%;
+    text-align: center;
     div {
       margin-bottom: 2%;
+      text-align: center;
     }
+  }
+  .footer-intro {
+    text-align: center !important;
+    margin: auto;
   }
 }

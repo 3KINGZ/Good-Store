@@ -6,10 +6,33 @@
   width: $width;
   margin: auto;
   letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-scroll {
+  background-color: $accent;
+  padding: 4px 0;
+}
+
+.navbar {
+  background-color: red;
 }
 
 .im {
   cursor: pointer;
+}
+
+.qty {
+  background: rgb(77, 75, 75);
+  color: $accent;
+  font-weight: bolder;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 4px;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 700px) {

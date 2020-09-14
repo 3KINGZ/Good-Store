@@ -1,16 +1,9 @@
 import React from "react";
-// import womenClothes from "../../assets/data/women/womenClothes";
+import ProductContainer from "../../containers/ProductContainer/ProductContainer";
+import menClothes from "../../assets/data/men/menClothes";
+
 function MenClothes() {
-  return (
-    <div>
-      <h1>Men Clothes</h1>
-      {/* <div>
-        {womenClothes.map((cloth) => (
-          <img src={cloth.image} alt="women" />
-        ))}
-      </div> */}
-    </div>
-  );
+  return <ProductContainer title="Men Clothes" data={menClothes} />;
 }
 
 export default MenClothes;
