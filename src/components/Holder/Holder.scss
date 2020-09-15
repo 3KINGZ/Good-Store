@@ -1,0 +1,9 @@
+@import "../../assets/styles/config";
+
+.holder {
+  width: $width;
+  margin: 30px auto;
+  h3 {
+    text-decoration: underline;
+  }
+}

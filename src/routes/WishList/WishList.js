@@ -1,11 +1,12 @@
 import React from "react";
+import Holder from "../../components/Holder/Holder";
 import "./WishList.scss";
 
 function Favourite() {
   return (
-    <div className="wishlist">
+    <Holder>
       <h3>My WishList</h3>
-    </div>
+    </Holder>
   );
 }
 

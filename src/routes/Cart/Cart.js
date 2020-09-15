@@ -1,11 +1,12 @@
 import React from "react";
+import Holder from "../../components/Holder/Holder";
 import "./Cart.scss";
 
 function Cart() {
   return (
-    <div className="cart">
+    <Holder>
       <h3>My Order</h3>
-    </div>
+    </Holder>
   );
 }
 
