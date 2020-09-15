@@ -12,7 +12,7 @@ import navyBlueJackets from "../../images/products/women/clothes/women9.jpg";
 
 const womenClothes = [
   {
-    id: 1,
+    id: 19,
     title: "Baby-Tee",
     type: "cloth",
     description:
@@ -21,7 +21,7 @@ const womenClothes = [
     image: babyTee,
   },
   {
-    id: 2,
+    id: 20,
     title: "Yellow Baby-Tee",
     type: "cloth",
     description:
@@ -30,7 +30,7 @@ const womenClothes = [
     image: yellowBabyTee,
   },
   {
-    id: 3,
+    id: 21,
     title: "Tube Top",
     type: "cloth",
     description:
@@ -39,7 +39,7 @@ const womenClothes = [
     image: tubeTop,
   },
   {
-    id: 4,
+    id: 22,
     title: "Red Shirt",
     type: "cloth",
     description:
@@ -48,7 +48,7 @@ const womenClothes = [
     image: redShirt,
   },
   {
-    id: 5,
+    id: 23,
     title: "Black Joggers",
     type: "cloth",
     description:
@@ -57,7 +57,7 @@ const womenClothes = [
     image: blackJoggers,
   },
   {
-    id: 6,
+    id: 24,
     title: "OverSized SweatShirt",
     type: "cloth",
     description:
@@ -66,7 +66,7 @@ const womenClothes = [
     image: overSizedSweatShirt,
   },
   {
-    id: 7,
+    id: 25,
     title: "Cozy Jacket",
     type: "cloth",
     description:
@@ -75,7 +75,7 @@ const womenClothes = [
     image: cozyJacket,
   },
   {
-    id: 8,
+    id: 26,
     title: "Cozy Grey Jacket",
     type: "cloth",
     description:
@@ -84,7 +84,7 @@ const womenClothes = [
     image: cozyGreyJacket,
   },
   {
-    id: 9,
+    id: 27,
     title: "Jeggings",
     type: "cloth",
     description:
@@ -93,7 +93,7 @@ const womenClothes = [
     image: jeggings,
   },
   {
-    id: 10,
+    id: 28,
     title: "Navy Blue Jackets",
     type: "cloth",
     description:

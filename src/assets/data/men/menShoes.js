@@ -10,7 +10,7 @@ import polishedBlacks from "../../images/products/men/shoes/menshoe8.jpg";
 
 const menShoes = [
   {
-    id: 1,
+    id: 11,
     title: "Flat Nike Sneakers",
     type: "shoe",
     description:
@@ -19,7 +19,7 @@ const menShoes = [
     image: flatNikeSneakers,
   },
   {
-    id: 2,
+    id: 12,
     title: "flips",
     type: "shoe",
     description:
@@ -28,7 +28,7 @@ const menShoes = [
     image: flips,
   },
   {
-    id: 3,
+    id: 13,
     title: "Sandal",
     type: "shoe",
     description:
@@ -37,7 +37,7 @@ const menShoes = [
     image: sandal,
   },
   {
-    id: 4,
+    id: 14,
     title: "Nike Air Force",
     type: "shoe",
     description:
@@ -46,7 +46,7 @@ const menShoes = [
     image: nikeAirForce,
   },
   {
-    id: 5,
+    id: 15,
     title: "Browns",
     type: "shoe",
     description:
@@ -55,7 +55,7 @@ const menShoes = [
     image: browns,
   },
   {
-    id: 6,
+    id: 16,
     title: "Mocassins",
     type: "shoe",
     description:
@@ -64,7 +64,7 @@ const menShoes = [
     image: mocassins,
   },
   {
-    id: 7,
+    id: 17,
     title: "Brogues",
     type: "shoe",
     description:
@@ -73,7 +73,7 @@ const menShoes = [
     image: brogues,
   },
   {
-    id: 8,
+    id: 18,
     title: "Polished Blacks",
     type: "shoe",
     description:

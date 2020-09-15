@@ -20,21 +20,27 @@ function Header() {
   }
 
   return (
-    <Link to="/">
-      <div className={`header ${change ? "navbar-scroll" : null}`}>
+    <div className={`header ${change ? "navbar-scroll" : null}`}>
+      <Link to="/wishlist">
         <div>
           <img src={heart} alt="search" width={20} className="im" />
-          <sup className="qty">5</sup>
+          <Link to="/wishlist">
+            <sup className="qty">5</sup>
+          </Link>
         </div>
+      </Link>
+      <Link to="/">
         <div className="title-container">
           <Title />
         </div>
+      </Link>
+      <Link to="/cart">
         <div>
           <img src={shoppingBag} alt="shopping bag" width={20} className="im" />
           <sup className="qty">6</sup>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
 

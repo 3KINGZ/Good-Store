@@ -7,6 +7,9 @@ import MenClothes from "./routes/MenClothes/MenClothes";
 import WomenClothes from "./routes/WomenClothes/WomenClothes";
 import MenShoes from "./routes/MenShoes/MenShoes";
 import WomenShoes from "./routes/WomenShoes/WomenShoes";
+import ItemDetail from "./routes/ItemDetail/ItemDetail";
+import Cart from "./routes/Cart/Cart";
+import WishList from "./routes/WishList/WishList";
 import "./App.scss";
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
         <Route path="/women-shoes" exact component={WomenShoes} />
         <Route path="/men-clothes" exact component={MenClothes} />
         <Route path="/women-clothes" exact component={WomenClothes} />
+        <Route path="/shop/:id" exact component={ItemDetail} />
+        <Route path="/cart" exact component={Cart} />
+        <Route path="/wishlist" exact component={WishList} />
       </Switch>
     </Router>
   );

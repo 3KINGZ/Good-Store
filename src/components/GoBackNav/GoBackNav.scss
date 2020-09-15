@@ -1,0 +1,14 @@
+@import "../../assets/styles/config";
+
+.go-back-nav {
+  width: 45%;
+  cursor: pointer;
+  padding: 7px;
+  text-align: center;
+  margin: 15px auto;
+  border: 0.5px solid rgb(185, 182, 182);
+  transition: background-color 1s;
+  &:hover {
+    background-color: $accent;
+  }
+}

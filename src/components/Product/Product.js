@@ -4,7 +4,7 @@ import "./Product.scss";
 
 function Product({ data }) {
   return (
-    <Link to="/item/:id">
+    <Link to={`/shop/${data.id}`}>
       <div className="product">
         <img src={data.image} alt={data.title} className="product-image" />
         <div className="title">{data.title}</div>

@@ -10,7 +10,7 @@ import rainCoatBoots from "../../images/products/women/shoes/womenshoe1.jpg";
 
 const womenShoes = [
   {
-    id: 1,
+    id: 29,
     title: "Slips",
     type: "shoe",
     description:
@@ -19,7 +19,7 @@ const womenShoes = [
     image: slips,
   },
   {
-    id: 2,
+    id: 30,
     title: "Gladiator",
     type: "shoe",
     description:
@@ -28,7 +28,7 @@ const womenShoes = [
     image: gladiator,
   },
   {
-    id: 3,
+    id: 31,
     title: "Tiger Sneakers",
     type: "shoe",
     description:
@@ -37,7 +37,7 @@ const womenShoes = [
     image: tigerSneakers,
   },
   {
-    id: 4,
+    id: 32,
     title: "Black Boots",
     type: "shoe",
     description:
@@ -46,7 +46,7 @@ const womenShoes = [
     image: blackBoots,
   },
   {
-    id: 5,
+    id: 33,
     title: "Suede Hills",
     type: "shoe",
     description:
@@ -55,7 +55,7 @@ const womenShoes = [
     image: suedeHills,
   },
   {
-    id: 6,
+    id: 34,
     title: "Brown Hills",
     type: "shoe",
     description:
@@ -64,7 +64,7 @@ const womenShoes = [
     image: brownHills,
   },
   {
-    id: 7,
+    id: 35,
     title: "Grey Hills",
     type: "shoe",
     description:
@@ -73,7 +73,7 @@ const womenShoes = [
     image: greyHills,
   },
   {
-    id: 8,
+    id: 36,
     title: "Rain Coat Boots",
     type: "shoe",
     description:
