@@ -1,0 +1,16 @@
+.qty-selector {
+  display: flex;
+  background-color: white;
+  button {
+    border: 1px solid rgb(185, 182, 182);
+    padding: 10px;
+    font-size: 2em;
+  }
+}
+
+.qty-value {
+  width: 50px;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}

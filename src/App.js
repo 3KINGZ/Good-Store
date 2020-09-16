@@ -10,6 +10,7 @@ import WomenShoes from "./routes/WomenShoes/WomenShoes";
 import ItemDetail from "./routes/ItemDetail/ItemDetail";
 import Cart from "./routes/Cart/Cart";
 import WishList from "./routes/WishList/WishList";
+import CheckOut from "./routes/CheckOut/CheckOut";
 import "./App.scss";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/shop/:id" exact component={ItemDetail} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/wishlist" exact component={WishList} />
+        <Route path="/checkout" exact component={CheckOut} />
       </Switch>
     </Router>
   );

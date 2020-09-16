@@ -5,13 +5,27 @@ import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import Footer from "../../components/Footer/Footer";
 import { ClothSelect } from "../../components/Select/Select";
 import { ShoeSelect } from "../../components/Select/Select";
+import QtySelector from "../../components/QtySelector/QtySelector";
 import "./ItemDetail.scss";
 
 function ItemDetail(props) {
   console.log(props);
   const [product, setProduct] = useState({});
+  const [quantity, setQuantity] = useState(1);
 
   const [products] = useState(store);
+
+  const onAdd = () => {
+    if (quantity < 100) {
+      setQuantity((quantity) => quantity + 1);
+    }
+  };
+
+  const onSub = () => {
+    if (quantity > 1) {
+      setQuantity((quantity) => quantity - 1);
+    }
+  };
 
   useEffect(
     () => {
@@ -48,6 +62,7 @@ function ItemDetail(props) {
           <div>
             {product.type === "cloth" ? <ClothSelect /> : <ShoeSelect />}
           </div>
+          <QtySelector val={quantity} sub={onSub} add={onAdd} />
           <div className="add-cart">Add to Cart</div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 @import "../../assets/styles/config";
 
 .holder {
+  h2 {
+    font-family: Courgette;
+  }
   width: $width;
   margin: 30px auto;
   h3 {
