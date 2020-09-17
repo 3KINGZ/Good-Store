@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
-import formatNaira from "format-to-naira";
 import { Link } from "react-router-dom";
+import { deleteFromCart } from "../../redux/cart/cartActions";
+import formatNaira from "format-to-naira";
 import Holder from "../../components/Holder/Holder";
 import menShoes from "../../assets/data/men/menShoes";
 import Table from "../../components/Table/Table";
@@ -9,30 +10,32 @@ import NoItem from "../../components/NoItem/NoItem";
 import "./Cart.scss";
 
 function Cart() {
-  // const cart = useSelector((state) => state.cart);
-  const [disable, setDisable] = useState(false);
-  const cart = menShoes;
+  const cart = useSelector((state) => state.cart.cart);
+  // const [disable, setDisable] = useState(false);
+  // const cart = menShoes;
+
+  // if (cart.length === 0) {
+  //   setDisable(true);
+  // }
 
   let tot = 0;
-  cart.forEach((element) => {
-    tot += Number(element.price.replace(/\D/g, ""));
-  });
 
-  if (!cart.length) {
-    setDisable(true);
+  if (cart.length) {
+    cart.forEach((element) => {
+      tot += Number(element.price.replace(/\D/g, ""));
+    });
   }
 
-  console.log(formatNaira(tot));
   return (
     <Holder>
-      {disable ? (
+      {cart.length === 0 ? (
         <NoItem container="cart" />
       ) : (
         <>
           <h3>My Order</h3>
           <div className="cart-content">
             <div>
-              <Table products={menShoes} />
+              <Table products={cart} onDelete={deleteFromCart} />
             </div>
             <div className="order-summary">
               <div>

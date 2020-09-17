@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 import Title from "../Title/Title";
@@ -7,6 +8,8 @@ import heart from "../../assets/icons/heart.svg";
 import "./Header.scss";
 
 function Header() {
+  const cart = useSelector((state) => state.cart.totalItems);
+  const wishList = useSelector((state) => state.wishList.totalItems);
   const [change, setChange] = useState(false);
   let position = useWindowScrollPosition();
 
@@ -23,7 +26,7 @@ function Header() {
       <Link to="/wishlist">
         <div>
           <img src={heart} alt="search" width={20} className="im" />
-          <sup className="qty">5</sup>
+          <sup className="qty">{wishList}</sup>
         </div>
       </Link>
       <Link to="/">
@@ -34,7 +37,7 @@ function Header() {
       <Link to="/cart">
         <div>
           <img src={shoppingBag} alt="shopping bag" width={20} className="im" />
-          <sup className="qty">6</sup>
+          <sup className="qty">{cart}</sup>
         </div>
       </Link>
     </div>

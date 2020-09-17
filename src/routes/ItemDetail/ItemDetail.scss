@@ -18,7 +18,20 @@
   text-align: center;
   transition: background-color 1s;
   padding: 10px;
-  margin: 50px auto !important;
+  margin: 15px auto !important;
+  cursor: pointer;
+  border: 0.5px solid rgb(185, 182, 182);
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.add-wishlist {
+  width: 100%;
+  text-align: center;
+  transition: background-color 1s;
+  padding: 10px;
+  margin: 8px auto !important;
   cursor: pointer;
   border: 0.5px solid rgb(185, 182, 182);
   &:hover {
