@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import formatNaira from "format-to-naira";
 import { Link } from "react-router-dom";
 import Holder from "../../components/Holder/Holder";
@@ -8,14 +9,16 @@ import NoItem from "../../components/NoItem/NoItem";
 import "./Cart.scss";
 
 function Cart() {
-  const [disable, setDisable] = useState(true);
+  // const cart = useSelector((state) => state.cart);
+  const [disable, setDisable] = useState(false);
+  const cart = menShoes;
 
   let tot = 0;
-  menShoes.forEach((element) => {
+  cart.forEach((element) => {
     tot += Number(element.price.replace(/\D/g, ""));
   });
 
-  if (!menShoes.length) {
+  if (!cart.length) {
     setDisable(true);
   }
 
@@ -25,8 +28,7 @@ function Cart() {
       {disable ? (
         <NoItem container="cart" />
       ) : (
-        <NoItem>
-          {" "}
+        <>
           <h3>My Order</h3>
           <div className="cart-content">
             <div>
@@ -55,7 +57,7 @@ function Cart() {
               </Link>
             </div>
           </div>
-        </NoItem>
+        </>
       )}
     </Holder>
   );

@@ -5,16 +5,20 @@ import "./Table.scss";
 function Table({ products }) {
   return (
     <table>
-      <tr>
-        <th>Products</th>
-        <th>Name</th>
-        {/* <th>Quantity</th> */}
-        <th>Price</th>
-        <th>Delete</th>
-      </tr>
-      {products.map((product) => (
-        <TableData product={product} />
-      ))}
+      <thead>
+        <tr>
+          <th>Products</th>
+          <th>Name</th>
+          {/* <th>Quantity</th> */}
+          <th>Price</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {products.map((product) => (
+          <TableData product={product} key={product.id} />
+        ))}
+      </tbody>
     </table>
   );
 }

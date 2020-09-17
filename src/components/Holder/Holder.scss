@@ -10,3 +10,10 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .holder {
+    width: 100%;
+    padding: 20px;
+  }
+}

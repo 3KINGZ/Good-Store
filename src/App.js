@@ -1,4 +1,6 @@
 import React from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Promo from "./components/Promo/Promo";
@@ -15,21 +17,23 @@ import "./App.scss";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Promo />
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/men-shoes" exact component={MenShoes} />
-        <Route path="/women-shoes" exact component={WomenShoes} />
-        <Route path="/men-clothes" exact component={MenClothes} />
-        <Route path="/women-clothes" exact component={WomenClothes} />
-        <Route path="/shop/:id" exact component={ItemDetail} />
-        <Route path="/cart" exact component={Cart} />
-        <Route path="/wishlist" exact component={WishList} />
-        <Route path="/checkout" exact component={CheckOut} />
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Header />
+        <Promo />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/men-shoes" exact component={MenShoes} />
+          <Route path="/women-shoes" exact component={WomenShoes} />
+          <Route path="/men-clothes" exact component={MenClothes} />
+          <Route path="/women-clothes" exact component={WomenClothes} />
+          <Route path="/shop/:id" exact component={ItemDetail} />
+          <Route path="/cart" exact component={Cart} />
+          <Route path="/wishlist" exact component={WishList} />
+          <Route path="/checkout" exact component={CheckOut} />
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 

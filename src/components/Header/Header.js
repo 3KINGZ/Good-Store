@@ -9,7 +9,6 @@ import "./Header.scss";
 function Header() {
   const [change, setChange] = useState(false);
   let position = useWindowScrollPosition();
-  // position == { x: 0, y: 0 }
 
   if (position.y > 20 && !change) {
     setChange(true);
@@ -24,9 +23,7 @@ function Header() {
       <Link to="/wishlist">
         <div>
           <img src={heart} alt="search" width={20} className="im" />
-          <Link to="/wishlist">
-            <sup className="qty">5</sup>
-          </Link>
+          <sup className="qty">5</sup>
         </div>
       </Link>
       <Link to="/">

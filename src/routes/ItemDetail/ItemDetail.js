@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import store from "../../assets/data/general/general";
 import GoBackNav from "../../components/GoBackNav/GoBackNav";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
