@@ -7,9 +7,10 @@ import Footer from "../../components/Footer/Footer";
 import { ClothSelect } from "../../components/Select/Select";
 import { ShoeSelect } from "../../components/Select/Select";
 import QtySelector from "../../components/QtySelector/QtySelector";
-import "./ItemDetail.scss";
 import { addToCart } from "../../redux/cart/cartActions";
 import { addToWishList } from "../../redux/wishList/wishListActions";
+import formatNaira from "format-to-naira";
+import "./ItemDetail.scss";
 
 function ItemDetail(props) {
   const dispatch = useDispatch();
@@ -44,12 +45,22 @@ function ItemDetail(props) {
     }
   };
 
+  const rePrice = product.price;
+  let price;
+  if (rePrice) {
+    price = rePrice.replace(/[^0-9]/g, "");
+    price = price * quantity;
+    console.log(price);
+  } else {
+    console.log("no product");
+  }
+
   const item = {
     id: product.id,
     image: product.image,
     title: product.title,
     quantity: quantity,
-    price: product.price,
+    price: formatNaira(price),
   };
 
   return (
