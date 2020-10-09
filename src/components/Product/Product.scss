@@ -3,8 +3,9 @@
 .product {
   width: 200px;
   text-align: center;
-
-  box-shadow: 5px 5px 5px 5px rgb(230, 225, 225);
+  box-shadow: 5px 5px 5px 5px rgb(199, 196, 196);
+  -webkit-box-shadow: 5px 5px 5px 5px rgb(199, 196, 196);
+  -moz-box-shadow: 5px 5px 5px 5px rgb(199, 196, 196);
 
   :div {
     margin-top: 10px;

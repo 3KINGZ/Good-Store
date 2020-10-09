@@ -11,7 +11,7 @@ function Header() {
   const cart = useSelector((state) => state.cart.totalItems);
   const wishList = useSelector((state) => state.wishList.totalItems);
   const [change, setChange] = useState(false);
-  let position = useWindowScrollPosition();
+  const position = useWindowScrollPosition();
 
   if (position.y > 20 && !change) {
     setChange(true);
@@ -20,6 +20,15 @@ function Header() {
   if (position.y <= 20 && change) {
     setChange(false);
   }
+  // useEffect(() => {
+  //   if (position.y > 20 && !change) {
+  //     setChange(true);
+  //   }
+  //   if (position.y <= 20 && change) {
+  //     setChange(false);
+  //   }
+  //   //eslint-disable-next-line
+  // }, [position]);
 
   return (
     <div className={`header ${change ? "navbar-scroll" : null}`}>
